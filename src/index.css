@@ -11,3 +11,106 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.todolist {
+  width: 93vw;
+  max-width: 1170px;
+  display: grid;
+  margin: auto;
+  gap: 1rem;
+}
+@media screen and (min-width:500px){
+  .todolist {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+div .todo-buttons {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ padding: 0.5rem;
+}
+div .todo-buttons button {
+  margin-left: 1rem;
+}
+
+
+@media screen and (max-width:499px) {
+  .todo-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    justify-items: center;
+  }
+  .todo-selection button{
+    margin: 0.2rem;
+  }
+}
+@media screen and (min-width:500px) {
+  .todo-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 0rem;
+  }
+ 
+}
+.normal-form{
+  position: absolute;
+  bottom: 40px;
+  background-color: rgba(120, 150, 150, 0.9);
+  left: 15px;
+  padding-bottom: 50px;
+}
+.normal-form  div{
+  align-content: center;
+  max-width: 90vw;
+}
+.normal-form form {
+  width: 99vw;
+  margin: auto;
+}
+@media screen and (min-width:500px){
+  .normal-form form {
+    width: 40vw;
+    padding: 2rem;
+  }
+  .contact .shadow {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .about, .contact {
+    padding: 30px;
+  }
+  .about h1 {
+    margin-bottom: 20px;
+  }
+  .about p::first-letter {
+    color: rgb(10, 10, 200);
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .about img {
+    float: right;
+    height: 60%;
+    width: 40%;
+  }
+}
+@media screen and (max-width:499px) {
+  .about img {
+    display: block;
+    margin: auto;
+  }
+  .about, .contact {
+    padding: 20px 0px;
+  }
+  .custom-nav p {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0px 15px;
+  }
+}
